@@ -205,6 +205,17 @@
 		activeTrackId = trackId;
 		activeItemIndex = 0;
 	}
+	let selectedImage = $state(null);
+
+	function openImage(image) {
+		selectedImage = image;
+	}
+
+	function closeImage() {
+		selectedImage = null;
+	}
+
+
 </script>
 
 <section class="page about-page">
@@ -237,7 +248,7 @@
 		{#each tracks as track}
 			<button
 				class:active={activeTrackId === track.id}
-				on:click={() => selectTrack(track.id)}
+				onclick={() => selectTrack(track.id)}
 			>
 				<span>{track.label}</span>
 				<small>{track.count}</small>
@@ -254,7 +265,7 @@
 					<button
 						class="timeline-item"
 						class:active={activeItemIndex === index}
-						on:click={() => (activeItemIndex = index)}
+						onclick={() => (activeItemIndex = index)}
 					>
 						<span class="timeline-dot"></span>
 
@@ -273,7 +284,9 @@
 					{#if activeItem.images.length > 0}
 						<div class="experience-images" class:gallery={activeItem.images.length > 1}>
 							{#each activeItem.images as image}
-								<img src={image} alt={activeItem.title} />
+								<button class="image-button" onclick={() => openImage(image)}>
+									<img src={image} alt={activeItem.title} />
+								</button>
 							{/each}
 						</div>
 					{:else}
@@ -341,4 +354,18 @@
 			<p>Building towards analytics work through reporting, validation, and visualization.</p>
 		</div>
 	</div>
+
+	{#if selectedImage}
+		<div
+			class="lightbox"
+			onclick={closeImage}
+			onkeydown={(event) => event.key === 'Escape' && closeImage()}
+			role="button"
+			tabindex="0"
+		>
+			<button class="lightbox-close" onclick={closeImage}>×</button>
+			<img src={selectedImage} alt="Selected experience" />
+		</div>
+	{/if}
+
 </section>
