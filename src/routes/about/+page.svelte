@@ -219,6 +219,10 @@
 </script>
 
 <section class="page about-page">
+
+	<div class="about-orb about-orb-one"></div>
+	<div class="about-orb about-orb-two"></div>	
+
 	<div class="about-hero">
 		<div>
 			<p class="eyebrow">About Me</p>

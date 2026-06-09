@@ -1,4 +1,9 @@
-<section class="hero hero-dynamic">
+<script>
+	import VantaHero from '$lib/components/VantaHero.svelte';
+</script>
+
+<section class="hero hero-dynamic hero-with-vanta">
+	<VantaHero />
 	<div class="hero-copy">
 		<p class="eyebrow">ckolavennu.live</p>
 

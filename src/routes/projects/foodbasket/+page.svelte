@@ -8,6 +8,30 @@
 		category contribution, and dashboard-based insight generation.
 	</p>
 
+	<div class="kpi-grid">
+		<div>
+			<span>Problem Area</span>
+			<strong>Food Affordability</strong>
+		</div>
+
+		<div>
+			<span>Analysis Level</span>
+			<strong>Basket Cost</strong>
+		</div>
+
+		<div>
+			<span>Output</span>
+			<strong>Dashboard + Insights</strong>
+		</div>
+
+		<div>
+			<span>Status</span>
+			<strong>In Progress</strong>
+		</div>
+	</div>
+
+
+
 	<div class="meta-grid">
 		<div>
 			<span>Status</span>
