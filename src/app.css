@@ -2243,3 +2243,206 @@ h1 {
 		grid-template-columns: 1fr;
 	}
 }
+
+/*
+* Updated Home Page: rotating glass icon bubbles
+*
+* Expected homepage structure:
+*
+* <div class="hero-visual">
+*   ...
+*   <div class="icon-orbit">
+*     <div class="icon-bubble bubble-chart">...</div>
+*     <div class="icon-bubble bubble-excel">...</div>
+*     <div class="icon-bubble bubble-python">...</div>
+*     <div class="icon-bubble bubble-powerbi">...</div>
+*     <div class="icon-bubble bubble-pie">...</div>
+*     <div class="icon-bubble bubble-search">...</div>
+*   </div>
+* </div>
+*/
+
+.icon-orbit {
+	position: absolute;
+	z-index: 9;
+	left: 50%;
+	top: 50%;
+	width: 560px;
+	height: 560px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	pointer-events: none;
+}
+
+.icon-bubble {
+	--bubble-size: 84px;
+	--orbit-radius: 245px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: var(--bubble-size);
+	height: var(--bubble-size);
+	margin-top: calc(var(--bubble-size) / -2);
+	margin-left: calc(var(--bubble-size) / -2);
+	display: grid;
+	place-items: center;
+	border: 1px solid rgba(148, 163, 184, 0.22);
+	border-radius: 26px;
+	background:
+		linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.82)) padding-box,
+		linear-gradient(135deg, rgba(56, 189, 248, 0.36), rgba(168, 85, 247, 0.3)) border-box;
+	box-shadow:
+		0 18px 50px rgba(0, 0, 0, 0.28),
+		0 0 24px rgba(56, 189, 248, 0.08);
+	backdrop-filter: blur(18px);
+	-webkit-backdrop-filter: blur(18px);
+	will-change: transform;
+}
+
+.icon-bubble::before {
+	content: '';
+	position: absolute;
+	inset: 6px;
+	border-radius: 20px;
+	background:
+		radial-gradient(circle at top left, rgba(56, 189, 248, 0.14), transparent 55%),
+		radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.14), transparent 55%);
+	pointer-events: none;
+}
+
+.icon-bubble svg {
+	position: relative;
+	z-index: 2;
+	width: 36px;
+	height: 36px;
+}
+
+/*
+* The bubbles rotate around the photo using translate-only keyframes.
+* This keeps the bubbles and icons upright instead of tilting with the orbit.
+*/
+.bubble-chart {
+	animation: orbitBubble1 42s linear infinite;
+}
+
+.bubble-excel {
+	animation: orbitBubble2 42s linear infinite;
+}
+
+.bubble-python {
+	animation: orbitBubble3 42s linear infinite;
+}
+
+.bubble-powerbi {
+	animation: orbitBubble4 42s linear infinite;
+}
+
+.bubble-pie {
+	animation: orbitBubble5 42s linear infinite;
+}
+
+.bubble-search {
+	animation: orbitBubble6 42s linear infinite;
+}
+
+@keyframes orbitBubble1 {
+	0%, 100% { transform: translate(0, calc(var(--orbit-radius) * -1)); }
+	16.666% { transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * -0.5)); }
+	33.333% { transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * 0.5)); }
+	50% { transform: translate(0, var(--orbit-radius)); }
+	66.666% { transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * 0.5)); }
+	83.333% { transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * -0.5)); }
+}
+
+@keyframes orbitBubble2 {
+	0%, 100% { transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * -0.5)); }
+	16.666% { transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * 0.5)); }
+	33.333% { transform: translate(0, var(--orbit-radius)); }
+	50% { transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * 0.5)); }
+	66.666% { transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * -0.5)); }
+	83.333% { transform: translate(0, calc(var(--orbit-radius) * -1)); }
+}
+
+@keyframes orbitBubble3 {
+	0%, 100% { transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * 0.5)); }
+	16.666% { transform: translate(0, var(--orbit-radius)); }
+	33.333% { transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * 0.5)); }
+	50% { transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * -0.5)); }
+	66.666% { transform: translate(0, calc(var(--orbit-radius) * -1)); }
+	83.333% { transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * -0.5)); }
+}
+
+@keyframes orbitBubble4 {
+	0%, 100% { transform: translate(0, var(--orbit-radius)); }
+	16.666% { transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * 0.5)); }
+	33.333% { transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * -0.5)); }
+	50% { transform: translate(0, calc(var(--orbit-radius) * -1)); }
+	66.666% { transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * -0.5)); }
+	83.333% { transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * 0.5)); }
+}
+
+@keyframes orbitBubble5 {
+	0%, 100% { transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * 0.5)); }
+	16.666% { transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * -0.5)); }
+	33.333% { transform: translate(0, calc(var(--orbit-radius) * -1)); }
+	50% { transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * -0.5)); }
+	66.666% { transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * 0.5)); }
+	83.333% { transform: translate(0, var(--orbit-radius)); }
+}
+
+@keyframes orbitBubble6 {
+	0%, 100% { transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * -0.5)); }
+	16.666% { transform: translate(0, calc(var(--orbit-radius) * -1)); }
+	33.333% { transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * -0.5)); }
+	50% { transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * 0.5)); }
+	66.666% { transform: translate(0, var(--orbit-radius)); }
+	83.333% { transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * 0.5)); }
+}
+
+@media (max-width: 960px) {
+	.icon-orbit {
+		width: 500px;
+		height: 500px;
+	}
+
+	.icon-bubble {
+		--orbit-radius: 215px;
+	}
+}
+
+@media (max-width: 560px) {
+	.icon-orbit {
+		width: 360px;
+		height: 360px;
+	}
+
+	.icon-bubble {
+		--bubble-size: 62px;
+		--orbit-radius: 160px;
+		border-radius: 20px;
+	}
+
+	.icon-bubble::before {
+		border-radius: 15px;
+	}
+
+	.icon-bubble svg {
+		width: 28px;
+		height: 28px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.icon-bubble,
+	.profile-card,
+	.floating-card-inner,
+	.about-orb,
+	.contact-orb,
+	.projects-orb,
+	.resume-orb,
+	.dash-bars span,
+	.status::before {
+		animation: none !important;
+	}
+}

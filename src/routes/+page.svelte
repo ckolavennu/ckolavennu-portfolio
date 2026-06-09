@@ -4,6 +4,7 @@
 
 <section class="hero hero-dynamic hero-with-vanta">
 	<VantaHero />
+
 	<div class="hero-copy">
 		<p class="eyebrow">ckolavennu.live</p>
 
@@ -28,10 +29,12 @@
 				<strong>3+ yrs</strong>
 				<span>Technical Assistant journey</span>
 			</div>
+
 			<div>
 				<strong>2</strong>
 				<span>Internship experiences</span>
 			</div>
+
 			<div>
 				<strong>Data</strong>
 				<span>Analytics focus</span>
@@ -47,19 +50,92 @@
 			<img src="/images/profile.jpeg" alt="Chandu Kolavennu" />
 		</div>
 
-		<div class="floating-card card-one">
-			<span>Experience</span>
-			<strong>TA → Lab Chief</strong>
-		</div>
+		<div class="icon-orbit" aria-hidden="true">
+			<div class="icon-bubble bubble-chart">
+				<svg viewBox="0 0 64 64" fill="none">
+					<rect x="13" y="31" width="8" height="17" rx="4" fill="#38BDF8" />
+					<rect x="27" y="24" width="8" height="24" rx="4" fill="#7DD3FC" />
+					<rect x="41" y="18" width="8" height="30" rx="4" fill="#A78BFA" />
+					<path
+						d="M14 22L26 18L38 24L50 14"
+						stroke="#F8FAFC"
+						stroke-width="4"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</div>
 
-		<div class="floating-card card-two">
-			<span>Leadership</span>
-			<strong>ISA President</strong>
-		</div>
+			<div class="icon-bubble bubble-excel">
+				<svg viewBox="0 0 64 64" fill="none">
+					<rect
+						x="18"
+						y="14"
+						width="28"
+						height="36"
+						rx="8"
+						fill="#0F172A"
+						stroke="#38BDF8"
+						stroke-width="2.5"
+					/>
+					<rect x="22" y="18" width="12" height="28" rx="5" fill="#38BDF8" fill-opacity="0.18" />
+					<path
+						d="M26 26L30 32L26 38"
+						stroke="#F8FAFC"
+						stroke-width="3.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path d="M38 24H42M38 31H42M38 38H42" stroke="#A78BFA" stroke-width="3" stroke-linecap="round" />
+				</svg>
+			</div>
 
-		<div class="floating-card card-three">
-			<span>Analytics</span>
-			<strong>Reporting Intern</strong>
+			<div class="icon-bubble bubble-python">
+				<svg viewBox="0 0 64 64" fill="none">
+					<path
+						d="M28 16H36C42.0751 16 47 20.9249 47 27V31H31C27.6863 31 25 28.3137 25 25V19C25 17.3431 26.3431 16 28 16Z"
+						fill="#38BDF8"
+					/>
+					<circle cx="38.5" cy="22.5" r="1.8" fill="#020617" />
+					<path
+						d="M36 48H28C21.9249 48 17 43.0751 17 37V33H33C36.3137 33 39 35.6863 39 39V45C39 46.6569 37.6569 48 36 48Z"
+						fill="#A78BFA"
+					/>
+					<circle cx="25.5" cy="41.5" r="1.8" fill="#020617" />
+				</svg>
+			</div>
+
+			<div class="icon-bubble bubble-powerbi">
+				<svg viewBox="0 0 64 64" fill="none">
+					<rect x="16" y="30" width="7" height="16" rx="3.5" fill="#7DD3FC" />
+					<rect x="26" y="24" width="7" height="22" rx="3.5" fill="#38BDF8" />
+					<rect x="36" y="18" width="7" height="28" rx="3.5" fill="#A78BFA" />
+					<rect x="46" y="12" width="7" height="34" rx="3.5" fill="#F472B6" />
+					<path d="M16 49H52" stroke="#F8FAFC" stroke-width="3" stroke-linecap="round" />
+				</svg>
+			</div>
+
+			<div class="icon-bubble bubble-pie">
+				<svg viewBox="0 0 64 64" fill="none">
+					<circle cx="32" cy="32" r="15" fill="#0F172A" stroke="#F8FAFC" stroke-width="2.5" />
+					<path d="M32 32V17C39.732 17 46 23.268 46 31H32Z" fill="#38BDF8" />
+					<path d="M32 32L44.5 39.5C41.9 44.7 37.4 47 32 47C23.716 47 17 40.284 17 32H32Z" fill="#A78BFA" />
+				</svg>
+			</div>
+
+			<div class="icon-bubble bubble-search">
+				<svg viewBox="0 0 64 64" fill="none">
+					<circle cx="28" cy="28" r="12" stroke="#F8FAFC" stroke-width="4" />
+					<path d="M37 37L47 47" stroke="#A78BFA" stroke-width="4" stroke-linecap="round" />
+					<path
+						d="M22 30L26 26L30 29L35 23"
+						stroke="#38BDF8"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</div>
 		</div>
 	</div>
 </section>
