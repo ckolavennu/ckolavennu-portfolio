@@ -13,11 +13,24 @@
 			<span class="gradient-text">clear stories.</span>
 		</h1>
 
-		<p class="subtitle">
-			I’m Chandu Kolavennu, an aspiring Data Analyst and Computer Science student. My work
-			combines data analytics, reporting, technical support, student leadership, and real-world
-			coordination experience.
-		</p>
+		<div class="hero-intro">
+			<p>
+				I’m <strong>Chandu Kolavennu</strong>  an aspiring
+				<span>Data Analyst</span> and Computer Science student.
+			</p>
+
+			<p>
+				I connect data analytics, reporting, technical support, student leadership, and real-world
+				coordination into practical problem-solving.
+			</p>
+
+			<div class="hero-keywords">
+				<span>Data Analytics</span>
+				<span>Reporting</span>
+				<span>Technical Support</span>
+				<span>Leadership</span>
+			</div>
+		</div>
 
 		<div class="buttons">
 			<a href="/about" class="primary">Explore My Journey</a>

@@ -2446,3 +2446,71 @@ h1 {
 		animation: none !important;
 	}
 }
+
+
+.hero-intro {
+	max-width: 760px;
+	margin-top: 30px;
+}
+
+.hero-intro p {
+	margin: 0 0 16px;
+	color: #cbd5e1;
+	font-size: 1.2rem;
+	line-height: 1.85;
+}
+
+.hero-intro strong {
+	color: #f8fafc;
+	font-weight: 900;
+}
+
+.hero-intro p span {
+	background: linear-gradient(135deg, #38bdf8, #a78bfa, #f472b6);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-weight: 900;
+}
+
+.hero-keywords {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 22px;
+}
+
+.hero-keywords span {
+	border: 1px solid rgba(56, 189, 248, 0.26);
+	border-radius: 999px;
+	padding: 9px 13px;
+	background: rgba(15, 23, 42, 0.58);
+	color: #e2e8f0;
+	font-size: 0.9rem;
+	font-weight: 800;
+	box-shadow: 0 0 24px rgba(56, 189, 248, 0.06);
+	animation: keywordFloat 5s ease-in-out infinite;
+}
+
+.hero-keywords span:nth-child(2) {
+	animation-delay: 0.4s;
+}
+
+.hero-keywords span:nth-child(3) {
+	animation-delay: 0.8s;
+}
+
+.hero-keywords span:nth-child(4) {
+	animation-delay: 1.2s;
+}
+
+@keyframes keywordFloat {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-5px);
+	}
+}
