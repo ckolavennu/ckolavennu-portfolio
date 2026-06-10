@@ -1,3 +1,26 @@
+<script>
+	let progressData = $state(null);
+	let progressError = $state(null);
+
+	$effect(() => {
+		async function loadProgress() {
+			try {
+				const response = await fetch('/api/foodbasket-progress');
+
+				if (!response.ok) {
+					throw new Error('Failed to load GitHub progress');
+				}
+
+				progressData = await response.json();
+			} catch (error) {
+				progressError = error.message;
+			}
+		}
+
+		loadProgress();
+	});
+</script>
+
 <section class="page project-detail">
 	<p class="eyebrow">Case Study</p>
 
@@ -30,6 +53,81 @@
 		</div>
 	</div>
 
+	<div class="github-progress-card">
+	<div class="github-progress-header">
+		<div>
+			<p class="eyebrow">Live GitHub Progress</p>
+			<h2>Foodbasket build tracker</h2>
+		</div>
+
+		{#if progressData}
+			<a href={progressData.repoUrl} target="_blank">View Repo →</a>
+		{/if}
+	</div>
+
+	{#if progressError}
+		<p class="progress-muted">Unable to load GitHub progress right now.</p>
+	{:else if !progressData}
+		<p class="progress-muted">Loading GitHub progress...</p>
+	{:else}
+		<div class="overall-progress">
+			<div>
+				<strong>{progressData.overallProgress}%</strong>
+				<span>Overall complete</span>
+			</div>
+
+			<div class="progress-bar">
+				<span style={`width: ${progressData.overallProgress}%`}></span>
+			</div>
+		</div>
+
+		<div class="progress-summary">
+			<div>
+				<strong>{progressData.closedIssues}</strong>
+				<span>Closed issues</span>
+			</div>
+
+			<div>
+				<strong>{progressData.openIssues}</strong>
+				<span>Open issues</span>
+			</div>
+
+			<div>
+				<strong>{progressData.totalIssues}</strong>
+				<span>Total issues</span>
+			</div>
+		</div>
+
+		<div class="milestone-progress-list">
+			{#each progressData.milestones as milestone}
+				<a href={milestone.url} target="_blank" class="milestone-progress-card">
+					<div class="milestone-progress-top">
+						<div>
+							<strong>{milestone.title}</strong>
+							<span>{milestone.closedIssues} / {milestone.totalIssues} completed</span>
+						</div>
+
+						<p>{milestone.progress}%</p>
+					</div>
+
+					<div class="mini-progress-bar">
+						<span style={`width: ${milestone.progress}%`}></span>
+					</div>
+				</a>
+			{/each}
+		</div>
+
+		{#if progressData.latestIssue}
+			<div class="latest-github-update">
+				<span>Latest update</span>
+				<a href={progressData.latestIssue.url} target="_blank">
+					{progressData.latestIssue.title}
+				</a>
+				<small>{progressData.latestIssue.milestone}</small>
+			</div>
+		{/if}
+	{/if}
+</div>
 
 
 	<div class="meta-grid">
