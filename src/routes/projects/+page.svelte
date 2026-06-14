@@ -7,32 +7,92 @@
 
 	<p class="subtitle">
 		A growing collection of analytics projects, full-stack builds, and practical tools focused on
-		real-world problems, dashboarding, and decision support.
+		real-world problems, dashboarding, machine learning, and decision support.
 	</p>
 
 	<div class="project-stats">
 		<div>
 			<span>Projects</span>
-			<strong>4</strong>
+			<strong>5</strong>
 			<p>Portfolio projects planned around practical analytics and product problems.</p>
 		</div>
 
 		<div>
 			<span>Main Focus</span>
 			<strong>Analytics</strong>
-			<p>Data cleaning, visualisation, reporting, and decision support.</p>
+			<p>Data cleaning, visualisation, reporting, machine learning, and decision support.</p>
 		</div>
 
 		<div>
-			<span>Active Builds</span>
-			<strong>2</strong>
-			<p>Foodbasket Analytics and StudyFlow are currently being developed.</p>
+			<span>Live Demos</span>
+			<strong>1</strong>
+			<p>The FYP dropout prediction dashboard is deployed on Streamlit Community Cloud.</p>
+		</div>
+	</div>
+
+	<div class="flagship-project fyp-feature">
+		<div>
+			<p class="status">Final Year Project</p>
+			<h2>Student Dropout Risk Prediction</h2>
+			<p>
+				A machine learning-based predictive analytics project that identifies student withdrawal
+				risk in higher education using academic and demographic indicators, with a deployed
+				Streamlit dashboard for interactive exploration.
+			</p>
+
+			<div class="project-meta-grid">
+				<div>
+					<span>Problem Area</span>
+					<strong>Student Retention</strong>
+				</div>
+
+				<div>
+					<span>Tools</span>
+					<strong>Python · ML · Streamlit</strong>
+				</div>
+
+				<div>
+					<span>Output</span>
+					<strong>Live Dashboard + Model</strong>
+				</div>
+			</div>
+
+			<div class="studyflow-actions">
+				<a href="/projects/student-dropout" class="primary">View Case Study</a>
+				<a href="https://ck-fyp.streamlit.app/" target="_blank" class="secondary">Live Demo</a>
+				<a
+					href="https://github.com/ckolavennu/student-dropout-risk-prediction-demo"
+					target="_blank"
+					class="secondary"
+				>
+					GitHub Repo
+				</a>
+			</div>
+		</div>
+
+		<div class="fyp-visual" aria-hidden="true">
+			<div class="fyp-model-card">
+				<span>Model Output</span>
+				<strong>Dropout Risk</strong>
+				<div class="fyp-score-ring">76%</div>
+			</div>
+
+			<div class="fyp-dashboard-card">
+				<div class="fyp-card-top"></div>
+				<div class="fyp-bars">
+					<span style="height: 48%"></span>
+					<span style="height: 72%"></span>
+					<span style="height: 36%"></span>
+					<span style="height: 84%"></span>
+				</div>
+				<div class="fyp-line"></div>
+			</div>
 		</div>
 	</div>
 
 	<div class="flagship-project">
 		<div>
-			<p class="status">Flagship Project</p>
+			<p class="status">Flagship Analytics Build</p>
 			<h2>Foodbasket Analytics</h2>
 			<p>
 				A practical data analytics project exploring food affordability and cost-of-living
@@ -145,8 +205,16 @@
 		</div>
 
 		<div class="roadmap-list">
-			<a href="/projects/foodbasket" class="roadmap-item active">
+			<a href="/projects/student-dropout" class="roadmap-item active">
 				<span>01</span>
+				<div>
+					<strong>Student Dropout Risk Prediction</strong>
+					<p>Live · Final year machine learning project deployed with Streamlit.</p>
+				</div>
+			</a>
+
+			<a href="/projects/foodbasket" class="roadmap-item active">
+				<span>02</span>
 				<div>
 					<strong>Foodbasket Analytics</strong>
 					<p>In progress · Food affordability analysis and dashboard storytelling.</p>
@@ -154,24 +222,36 @@
 			</a>
 
 			<a href="/projects/studyflow" class="roadmap-item active">
-				<span>02</span>
+				<span>03</span>
 				<div>
 					<strong>StudyFlow</strong>
 					<p>Active build · SvelteKit productivity app with Firebase authentication.</p>
-				</div>
-			</a>
-
-			<a href="/projects/student-dropout" class="roadmap-item">
-				<span>03</span>
-				<div>
-					<strong>Student Dropout Risk Prediction</strong>
-					<p>Planned · Machine learning for early withdrawal-risk identification.</p>
 				</div>
 			</a>
 		</div>
 	</div>
 
 	<div class="project-list enhanced-project-list">
+		<a href="/projects/student-dropout" class="project-row fyp-row">
+			<div>
+				<p class="status">Live Demo</p>
+				<h2>Student Dropout Risk Prediction</h2>
+				<p>
+					A final year machine learning project focused on predicting withdrawal risk in higher
+					education using academic indicators and a deployed Streamlit dashboard.
+				</p>
+
+				<div class="tags">
+					<span>Python</span>
+					<span>Machine Learning</span>
+					<span>Classification</span>
+					<span>Streamlit</span>
+				</div>
+			</div>
+
+			<strong>View Case Study →</strong>
+		</a>
+
 		<a href="/projects/foodbasket" class="project-row">
 			<div>
 				<p class="status">In Progress</p>
@@ -212,30 +292,10 @@
 			<strong>View Project →</strong>
 		</a>
 
-		<a href="/projects/student-dropout" class="project-row">
-			<div>
-				<p class="status">Planned</p>
-				<h2>Student Dropout Risk Prediction</h2>
-				<p>
-					A machine learning-based predictive analytics project focused on identifying
-					students at risk of withdrawal in higher education.
-				</p>
-
-				<div class="tags">
-					<span>Python</span>
-					<span>Machine Learning</span>
-					<span>Classification</span>
-					<span>Streamlit</span>
-				</div>
-			</div>
-
-			<strong>Coming Soon →</strong>
-		</a>
-
 		<div class="project-row muted">
 			<div>
 				<p class="status">Coming Soon</p>
-				<h2>Project 4</h2>
+				<h2>Project 5</h2>
 				<p>
 					A future analytics project focused on solving a practical real-world problem using
 					data.
@@ -254,6 +314,125 @@
 </section>
 
 <style>
+	.fyp-feature {
+		background:
+			radial-gradient(circle at top right, rgba(56, 189, 248, 0.2), transparent 38%),
+			linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.78)) padding-box,
+			linear-gradient(135deg, rgba(56, 189, 248, 0.55), rgba(244, 114, 182, 0.36)) border-box;
+	}
+
+	.fyp-visual {
+		position: relative;
+		min-height: 360px;
+	}
+
+	.fyp-dashboard-card,
+	.fyp-model-card {
+		border: 1px solid rgba(148, 163, 184, 0.18);
+		background: rgba(2, 6, 23, 0.52);
+		box-shadow: 0 22px 70px rgba(0, 0, 0, 0.26);
+		backdrop-filter: blur(18px);
+	}
+
+	.fyp-dashboard-card {
+		position: absolute;
+		right: 0;
+		bottom: 12px;
+		width: min(380px, 92%);
+		height: 250px;
+		border-radius: 28px;
+		padding: 20px;
+		overflow: hidden;
+		background:
+			linear-gradient(rgba(2, 6, 23, 0.58), rgba(2, 6, 23, 0.58)),
+			linear-gradient(rgba(148, 163, 184, 0.045) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(148, 163, 184, 0.045) 1px, transparent 1px);
+		background-size: auto, 28px 28px, 28px 28px;
+		animation: studyflowFloat 6s ease-in-out infinite;
+	}
+
+	.fyp-card-top {
+		width: 68%;
+		height: 18px;
+		border-radius: 999px;
+		background: linear-gradient(90deg, #38bdf8, #f472b6);
+	}
+
+	.fyp-bars {
+		position: absolute;
+		left: 26px;
+		right: 26px;
+		bottom: 32px;
+		display: flex;
+		align-items: end;
+		gap: 14px;
+		height: 150px;
+	}
+
+	.fyp-bars span {
+		flex: 1;
+		border-radius: 999px 999px 8px 8px;
+		background: linear-gradient(180deg, #38bdf8, rgba(56, 189, 248, 0.12));
+		animation: barPulse 3s ease-in-out infinite;
+	}
+
+	.fyp-line {
+		position: absolute;
+		left: 28px;
+		right: 28px;
+		top: 112px;
+		height: 2px;
+		background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
+		transform: rotate(-7deg);
+		box-shadow: 0 0 28px rgba(56, 189, 248, 0.42);
+	}
+
+	.fyp-model-card {
+		position: absolute;
+		z-index: 4;
+		left: 0;
+		top: 24px;
+		width: 172px;
+		border-radius: 24px;
+		padding: 18px;
+		animation: studyflowFloat 5s ease-in-out infinite;
+	}
+
+	.fyp-model-card span {
+		color: #94a3b8;
+		font-size: 0.78rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+
+	.fyp-model-card strong {
+		display: block;
+		margin: 8px 0 14px;
+		color: #f8fafc;
+		font-size: 1.2rem;
+	}
+
+	.fyp-score-ring {
+		display: grid;
+		width: 92px;
+		height: 92px;
+		place-items: center;
+		border-radius: 50%;
+		background:
+			radial-gradient(circle, rgba(15, 23, 42, 0.98) 54%, transparent 56%),
+			conic-gradient(#38bdf8 0 76%, rgba(148, 163, 184, 0.18) 76% 100%);
+		color: #f8fafc;
+		font-weight: 900;
+		font-size: 1.25rem;
+	}
+
+	.fyp-row {
+		background:
+			radial-gradient(circle at top right, rgba(56, 189, 248, 0.14), transparent 42%),
+			rgba(15, 23, 42, 0.68);
+	}
+
 	.studyflow-feature {
 		position: relative;
 		display: grid;
@@ -448,13 +627,15 @@
 	}
 
 	@media (max-width: 960px) {
+		.flagship-project,
 		.studyflow-feature {
 			grid-template-columns: 1fr;
 		}
 	}
 
 	@media (max-width: 560px) {
-		.studyflow-feature {
+		.studyflow-feature,
+		.flagship-project {
 			padding: 24px;
 		}
 
@@ -468,6 +649,15 @@
 
 		.mockup-main {
 			left: 18px;
+		}
+
+		.fyp-model-card {
+			display: none;
+		}
+
+		.fyp-dashboard-card {
+			position: relative;
+			width: auto;
 		}
 	}
 </style>
