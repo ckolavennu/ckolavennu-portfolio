@@ -1,10 +1,21 @@
+:global(.status) {
+	border: 1px solid rgba(148, 163, 184, 0.16);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
 :global(.status-live),
 :global(.fyp-feature .status),
 :global(.fyp-page .status),
 :global(.improved-projects .project-card:nth-child(1) .status),
 :global(.compact-project-list .project-row:nth-child(1) .status) {
-	background: rgba(16, 185, 129, 0.14);
-	color: #6ee7b7;
+	border-color: rgba(52, 211, 153, 0.42);
+	background:
+		linear-gradient(135deg, rgba(16, 185, 129, 0.32), rgba(20, 184, 166, 0.16)),
+		rgba(6, 78, 59, 0.28);
+	color: #a7f3d0;
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.06),
+		0 0 28px rgba(16, 185, 129, 0.14);
 }
 
 :global(.status-live::before),
@@ -13,15 +24,21 @@
 :global(.improved-projects .project-card:nth-child(1) .status::before),
 :global(.compact-project-list .project-row:nth-child(1) .status::before) {
 	background: #34d399;
-	box-shadow: 0 0 18px rgba(52, 211, 153, 0.85);
+	box-shadow: 0 0 18px rgba(52, 211, 153, 0.9);
 }
 
 :global(.status-progress),
 :global(.foodbasket-page .status),
 :global(.improved-projects .project-card:nth-child(2) .status),
 :global(.compact-project-list .project-row:nth-child(2) .status) {
-	background: rgba(56, 189, 248, 0.12);
-	color: #7dd3fc;
+	border-color: rgba(56, 189, 248, 0.44);
+	background:
+		linear-gradient(135deg, rgba(56, 189, 248, 0.34), rgba(59, 130, 246, 0.16)),
+		rgba(12, 74, 110, 0.28);
+	color: #bae6fd;
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.06),
+		0 0 28px rgba(56, 189, 248, 0.14);
 }
 
 :global(.status-progress::before),
@@ -29,15 +46,21 @@
 :global(.improved-projects .project-card:nth-child(2) .status::before),
 :global(.compact-project-list .project-row:nth-child(2) .status::before) {
 	background: #38bdf8;
-	box-shadow: 0 0 18px rgba(56, 189, 248, 0.85);
+	box-shadow: 0 0 18px rgba(56, 189, 248, 0.9);
 }
 
 :global(.status-build),
 :global(.studyflow-page .status),
 :global(.improved-projects .project-card:nth-child(3) .status),
 :global(.compact-project-list .project-row:nth-child(3) .status) {
-	background: rgba(168, 85, 247, 0.14);
-	color: #c4b5fd;
+	border-color: rgba(168, 85, 247, 0.46);
+	background:
+		linear-gradient(135deg, rgba(168, 85, 247, 0.34), rgba(236, 72, 153, 0.14)),
+		rgba(88, 28, 135, 0.28);
+	color: #ddd6fe;
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.06),
+		0 0 28px rgba(168, 85, 247, 0.16);
 }
 
 :global(.status-build::before),
@@ -45,12 +68,15 @@
 :global(.improved-projects .project-card:nth-child(3) .status::before),
 :global(.compact-project-list .project-row:nth-child(3) .status::before) {
 	background: #a78bfa;
-	box-shadow: 0 0 18px rgba(167, 139, 250, 0.85);
+	box-shadow: 0 0 18px rgba(167, 139, 250, 0.9);
 }
 
 :global(.status-muted),
 :global(.project-row.muted .status) {
-	background: rgba(148, 163, 184, 0.12);
+	border-color: rgba(148, 163, 184, 0.24);
+	background:
+		linear-gradient(135deg, rgba(148, 163, 184, 0.2), rgba(71, 85, 105, 0.12)),
+		rgba(30, 41, 59, 0.3);
 	color: #cbd5e1;
 }
 
