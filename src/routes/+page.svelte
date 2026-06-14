@@ -15,7 +15,7 @@
 
 		<div class="hero-intro">
 			<p>
-				I’m <strong>Chandu Kolavennu</strong>  an aspiring
+				I’m <strong>Chandu Kolavennu</strong> — an aspiring
 				<span>Data Analyst</span> and Computer Science student.
 			</p>
 
@@ -201,10 +201,31 @@
 	</div>
 
 	<div class="project-grid improved-projects">
-		<a href="/projects/foodbasket" class="project-card featured">
+		<a href="/projects/student-dropout" class="project-card featured">
+			<div class="project-card-top">
+				<p class="status">Live Demo</p>
+			</div>
+
+			<h3>Student Dropout Risk Prediction</h3>
+
+			<p>
+				My final year machine learning project focused on predicting student withdrawal risk in
+				higher education, supported by a deployed Streamlit dashboard.
+			</p>
+
+			<div class="tags">
+				<span>Python</span>
+				<span>Machine Learning</span>
+				<span>Classification</span>
+				<span>Streamlit</span>
+			</div>
+
+			<span class="card-link">View Case Study →</span>
+		</a>
+
+		<a href="/projects/foodbasket" class="project-card">
 			<div class="project-card-top">
 				<p class="status">In Progress</p>
-				<span>01</span>
 			</div>
 
 			<h3>Foodbasket Analytics</h3>
@@ -224,49 +245,26 @@
 			<span class="card-link">View Case Study →</span>
 		</a>
 
-		<a href="/projects/student-dropout" class="project-card">
+		<a href="/projects/studyflow" class="project-card">
 			<div class="project-card-top">
-				<p class="status">Planned</p>
-				<span>02</span>
+				<p class="status">Active Build</p>
 			</div>
 
-			<h3>Student Dropout Risk Prediction</h3>
+			<h3>StudyFlow</h3>
 
 			<p>
-				A machine learning-based predictive analytics project focused on identifying students
-				at risk of withdrawal in higher education.
+				A SvelteKit and Firebase productivity app for assignment planning, deadlines, and
+				student task tracking with account-based storage.
 			</p>
 
 			<div class="tags">
-				<span>Python</span>
-				<span>ML</span>
-				<span>Classification</span>
-				<span>Streamlit</span>
+				<span>SvelteKit</span>
+				<span>Firebase</span>
+				<span>Authentication</span>
+				<span>Firestore</span>
 			</div>
 
-			<span class="card-link">Coming Soon →</span>
-		</a>
-
-		<a href="/projects" class="project-card">
-			<div class="project-card-top">
-				<p class="status">Coming Soon</p>
-				<span>03</span>
-			</div>
-
-			<h3>Project 3</h3>
-
-			<p>
-				A third analytics project focused on solving a real-world problem using structured
-				analysis, visualisation, and insight communication.
-			</p>
-
-			<div class="tags">
-				<span>SQL</span>
-				<span>Analytics</span>
-				<span>Visualisation</span>
-			</div>
-
-			<span class="card-link">Explore Projects →</span>
+			<span class="card-link">View Project →</span>
 		</a>
 	</div>
 </section>
