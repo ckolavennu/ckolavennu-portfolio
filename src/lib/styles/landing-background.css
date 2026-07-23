@@ -1,22 +1,33 @@
 /*
  * Landing page background fixes
  *
- * The Vanta canvas previously sat inside the standard .hero max-width container,
- * which made the animated area look like a boxed rectangle. These overrides keep
- * the hero content aligned with the rest of the site while allowing the live
- * background to fill the full landing section.
+ * The Vanta canvas should feel full-screen, but the hero content still needs to
+ * behave like the rest of the site. The hero itself becomes the full-width
+ * background layer, while the text and profile visual are placed back into a
+ * centered 1050px content grid.
  */
+
+html,
+body {
+	overflow-x: hidden;
+}
 
 .hero.hero-with-vanta {
 	position: relative;
+	display: grid;
+	grid-template-columns:
+		minmax(24px, 1fr)
+		minmax(0, 518px)
+		60px
+		minmax(0, 424px)
+		minmax(24px, 1fr);
+	align-items: center;
+	gap: 0;
 	width: 100%;
 	max-width: none;
 	min-height: calc(100svh - 86px);
 	margin: 0;
-	padding:
-		clamp(5rem, 10vw, 7.5rem)
-		max(24px, calc((100vw - 1050px) / 2 + 24px))
-		clamp(4.5rem, 8vw, 6rem);
+	padding: 110px 0 80px;
 	overflow: hidden;
 	border-radius: 0 0 48px 48px;
 	isolation: isolate;
@@ -50,17 +61,35 @@
 	z-index: 2;
 }
 
+.hero.hero-with-vanta > .hero-copy {
+	grid-column: 2;
+	min-width: 0;
+}
+
+.hero.hero-with-vanta > .hero-visual {
+	grid-column: 4;
+	width: 100%;
+	min-width: 0;
+	justify-self: center;
+}
+
 @media (max-width: 960px) {
 	.hero.hero-with-vanta {
+		grid-template-columns: minmax(20px, 1fr) minmax(0, calc(100% - 40px)) minmax(20px, 1fr);
 		min-height: auto;
 		padding-top: 90px;
 		padding-bottom: 70px;
+	}
+
+	.hero.hero-with-vanta > .hero-copy,
+	.hero.hero-with-vanta > .hero-visual {
+		grid-column: 2;
 	}
 }
 
 @media (max-width: 560px) {
 	.hero.hero-with-vanta {
-		padding-inline: 20px;
+		grid-template-columns: 20px minmax(0, 1fr) 20px;
 		padding-top: 70px;
 		padding-bottom: 56px;
 		border-radius: 0 0 32px 32px;
