@@ -24,9 +24,9 @@
 		</div>
 
 		<div>
-			<span>Full-Stack Build</span>
-			<strong>Student Tools</strong>
-			<p>SvelteKit, Firebase authentication, user-focused design, and app workflows.</p>
+			<span>Transport Analytics</span>
+			<strong>Urban Mobility</strong>
+			<p>Transit accessibility, reliability thinking, open data, and geospatial storytelling.</p>
 		</div>
 	</div>
 
@@ -131,24 +131,29 @@
 			<strong>View Case Study →</strong>
 		</a>
 
-		<a href="/projects/studyflow" class="project-row studyflow-row">
+		<a
+			href="https://github.com/ckolavennu/TransitPulse-Klang-Valley"
+			class="project-row transitpulse-row"
+			target="_blank"
+			rel="noreferrer"
+		>
 			<div>
 				<p class="status">Active Build</p>
-				<h2>StudyFlow</h2>
+				<h2>TransitPulse Klang Valley</h2>
 				<p>
-					A SvelteKit web app for assignment planning, deadlines, and student task tracking with
-					Firebase authentication and account-based storage.
+					A transport analytics project for exploring Klang Valley transit accessibility,
+					service reliability, and mobility patterns through open data and dashboard-ready insights.
 				</p>
 
 				<div class="tags">
-					<span>SvelteKit</span>
-					<span>Firebase</span>
-					<span>Authentication</span>
-					<span>Firestore</span>
+					<span>Python</span>
+					<span>Open Data</span>
+					<span>Geospatial</span>
+					<span>Dashboarding</span>
 				</div>
 			</div>
 
-			<strong>View Project →</strong>
+			<strong>View GitHub Repo →</strong>
 		</a>
 	</div>
 </section>
@@ -282,7 +287,7 @@
 			rgba(15, 23, 42, 0.68);
 	}
 
-	.studyflow-row {
+	.transitpulse-row {
 		background:
 			radial-gradient(circle at top right, rgba(168, 85, 247, 0.12), transparent 42%),
 			rgba(15, 23, 42, 0.68);
