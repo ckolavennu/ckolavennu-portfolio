@@ -245,26 +245,31 @@
 			<span class="card-link">View Case Study →</span>
 		</a>
 
-		<a href="/projects/studyflow" class="project-card">
+		<a
+			href="https://github.com/ckolavennu/TransitPulse-Klang-Valley"
+			class="project-card"
+			target="_blank"
+			rel="noreferrer"
+		>
 			<div class="project-card-top">
 				<p class="status">Active Build</p>
 			</div>
 
-			<h3>StudyFlow</h3>
+			<h3>TransitPulse Klang Valley</h3>
 
 			<p>
-				A SvelteKit and Firebase productivity app for assignment planning, deadlines, and
-				student task tracking with account-based storage.
+				A Klang Valley transport analytics project exploring transit accessibility, service
+				reliability, and mobility patterns using open data and dashboard-style insights.
 			</p>
 
 			<div class="tags">
-				<span>SvelteKit</span>
-				<span>Firebase</span>
-				<span>Authentication</span>
-				<span>Firestore</span>
+				<span>Python</span>
+				<span>Open Data</span>
+				<span>Geospatial</span>
+				<span>Dashboarding</span>
 			</div>
 
-			<span class="card-link">View Project →</span>
+			<span class="card-link">View GitHub Repo →</span>
 		</a>
 	</div>
 </section>
