@@ -8,7 +8,7 @@ The site is designed as more than a static resume. It highlights practical work 
 
 - **Reactive landing page** with a full-width animated Vanta/Three.js background.
 - **Modern SvelteKit structure** for fast routing and component-based development.
-- **Project case study pages** for portfolio work such as Student Dropout Risk Prediction, Foodbasket Analytics, and StudyFlow.
+- **Project case study pages and links** for portfolio work such as Student Dropout Risk Prediction, Foodbasket Analytics, and TransitPulse Klang Valley.
 - **Resume page** with an embedded resume preview.
 - **Responsive design** for desktop, tablet, and mobile screens.
 - **Live project progress integration** for tracking selected GitHub project activity.
