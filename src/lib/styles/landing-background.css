@@ -1,0 +1,78 @@
+/*
+ * Landing page background fixes
+ *
+ * The Vanta canvas previously sat inside the standard .hero max-width container,
+ * which made the animated area look like a boxed rectangle. These overrides keep
+ * the hero content aligned with the rest of the site while allowing the live
+ * background to fill the full landing section.
+ */
+
+.hero.hero-with-vanta {
+	position: relative;
+	width: 100%;
+	max-width: none;
+	min-height: calc(100svh - 86px);
+	margin: 0;
+	padding:
+		clamp(5rem, 10vw, 7.5rem)
+		max(24px, calc((100vw - 1050px) / 2 + 24px))
+		clamp(4.5rem, 8vw, 6rem);
+	overflow: hidden;
+	border-radius: 0 0 48px 48px;
+	isolation: isolate;
+	background: #020617;
+}
+
+.hero.hero-with-vanta .vanta-hero-bg,
+.hero.hero-with-vanta .vanta-hero-bg canvas {
+	position: absolute !important;
+	inset: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.hero.hero-with-vanta .vanta-hero-bg {
+	z-index: 0;
+	opacity: 0.74;
+}
+
+.hero.hero-with-vanta::after {
+	z-index: 1;
+	background:
+		linear-gradient(90deg, rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.58), rgba(2, 6, 23, 0.82)),
+		radial-gradient(circle at 18% 22%, rgba(56, 189, 248, 0.16), transparent 34%),
+		radial-gradient(circle at 82% 28%, rgba(168, 85, 247, 0.2), transparent 38%),
+		radial-gradient(circle at 62% 86%, rgba(244, 114, 182, 0.1), transparent 36%);
+}
+
+.hero.hero-with-vanta > *:not(.vanta-hero-bg) {
+	position: relative;
+	z-index: 2;
+}
+
+@media (max-width: 960px) {
+	.hero.hero-with-vanta {
+		min-height: auto;
+		padding-top: 90px;
+		padding-bottom: 70px;
+	}
+}
+
+@media (max-width: 560px) {
+	.hero.hero-with-vanta {
+		padding-inline: 20px;
+		padding-top: 70px;
+		padding-bottom: 56px;
+		border-radius: 0 0 32px 32px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.profile-card,
+	.icon-bubble,
+	.orbit,
+	.about-orb,
+	.status::before {
+		animation: none !important;
+	}
+}
