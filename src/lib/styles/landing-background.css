@@ -73,6 +73,35 @@ body {
 	justify-self: center;
 }
 
+/*
+ * Keep the glass icons distributed around the image even if the browser or OS
+ * temporarily disables CSS animations. The animation rules still take over when
+ * motion is allowed.
+ */
+.hero.hero-with-vanta .bubble-chart {
+	transform: translate(0, calc(var(--orbit-radius) * -1));
+}
+
+.hero.hero-with-vanta .bubble-excel {
+	transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * -0.5));
+}
+
+.hero.hero-with-vanta .bubble-python {
+	transform: translate(calc(var(--orbit-radius) * 0.866), calc(var(--orbit-radius) * 0.5));
+}
+
+.hero.hero-with-vanta .bubble-powerbi {
+	transform: translate(0, var(--orbit-radius));
+}
+
+.hero.hero-with-vanta .bubble-pie {
+	transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * 0.5));
+}
+
+.hero.hero-with-vanta .bubble-search {
+	transform: translate(calc(var(--orbit-radius) * -0.866), calc(var(--orbit-radius) * -0.5));
+}
+
 @media (max-width: 960px) {
 	.hero.hero-with-vanta {
 		grid-template-columns: minmax(20px, 1fr) minmax(0, calc(100% - 40px)) minmax(20px, 1fr);
@@ -98,10 +127,38 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
 	.profile-card,
-	.icon-bubble,
 	.orbit,
 	.about-orb,
 	.status::before {
 		animation: none !important;
+	}
+
+	/*
+	 * The global stylesheet disables .icon-bubble animations for reduced-motion
+	 * users. Re-enable only this slow hero orbit so the icons do not stack in the
+	 * middle of the profile photo on desktop browsers.
+	 */
+	.hero.hero-with-vanta .bubble-chart {
+		animation: orbitBubble1 42s linear infinite !important;
+	}
+
+	.hero.hero-with-vanta .bubble-excel {
+		animation: orbitBubble2 42s linear infinite !important;
+	}
+
+	.hero.hero-with-vanta .bubble-python {
+		animation: orbitBubble3 42s linear infinite !important;
+	}
+
+	.hero.hero-with-vanta .bubble-powerbi {
+		animation: orbitBubble4 42s linear infinite !important;
+	}
+
+	.hero.hero-with-vanta .bubble-pie {
+		animation: orbitBubble5 42s linear infinite !important;
+	}
+
+	.hero.hero-with-vanta .bubble-search {
+		animation: orbitBubble6 42s linear infinite !important;
 	}
 }
