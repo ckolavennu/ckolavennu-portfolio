@@ -59,10 +59,11 @@
 
 			<div class="studyflow-actions">
 				<a href="/projects/student-dropout" class="primary">View Case Study</a>
-				<a href="https://ck-fyp.streamlit.app/" target="_blank" class="secondary">Live Demo</a>
+				<a href="https://ck-fyp.streamlit.app/" target="_blank" rel="noreferrer" class="secondary">Live Demo</a>
 				<a
 					href="https://github.com/ckolavennu/student-dropout-risk-prediction-demo"
 					target="_blank"
+					rel="noreferrer"
 					class="secondary"
 				>
 					GitHub Repo
@@ -90,8 +91,8 @@
 		</div>
 	</div>
 
-	<div class="project-list enhanced-project-list compact-project-list">
-		<a href="/projects/foodbasket" class="project-row">
+	<div class="flagship-stack">
+		<div class="flagship-project foodbasket-feature">
 			<div>
 				<p class="status">In Progress</p>
 				<h2>Foodbasket Analytics</h2>
@@ -100,23 +101,55 @@
 					category contribution, and dashboard-based insights.
 				</p>
 
-				<div class="tags">
-					<span>Python</span>
-					<span>Excel</span>
-					<span>EDA</span>
-					<span>Dashboarding</span>
+				<div class="project-meta-grid">
+					<div>
+						<span>Problem Area</span>
+						<strong>Food Affordability</strong>
+					</div>
+
+					<div>
+						<span>Tools</span>
+						<strong>Python · Excel · EDA</strong>
+					</div>
+
+					<div>
+						<span>Output</span>
+						<strong>Price Analysis + Dashboard</strong>
+					</div>
+				</div>
+
+				<div class="studyflow-actions">
+					<a href="/projects/foodbasket" class="primary">View Case Study</a>
 				</div>
 			</div>
 
-			<strong>View Case Study →</strong>
-		</a>
+			<div class="foodbasket-visual" aria-hidden="true">
+				<div class="foodbasket-focus-card">
+					<span>Analysis Focus</span>
+					<strong>Basket Affordability</strong>
+					<div class="foodbasket-ring">RM</div>
+				</div>
 
-		<a
-			href="https://github.com/ckolavennu/TransitPulse-Klang-Valley"
-			class="project-row transitpulse-row"
-			target="_blank"
-			rel="noreferrer"
-		>
+				<div class="foodbasket-dashboard-card">
+					<div class="foodbasket-card-top"></div>
+					<div class="foodbasket-bars">
+						<span style="height: 58%"></span>
+						<span style="height: 78%"></span>
+						<span style="height: 44%"></span>
+						<span style="height: 68%"></span>
+					</div>
+					<div class="foodbasket-line"></div>
+					<div class="foodbasket-labels">
+						<span>Staples</span>
+						<span>Produce</span>
+						<span>Dairy</span>
+						<span>Other</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flagship-project transit-feature">
 			<div>
 				<p class="status">Active Build</p>
 				<h2>TransitPulse Klang Valley</h2>
@@ -125,16 +158,55 @@
 					service reliability, and mobility patterns through open data and dashboard-ready insights.
 				</p>
 
-				<div class="tags">
-					<span>Python</span>
-					<span>Open Data</span>
-					<span>Geospatial</span>
-					<span>Dashboarding</span>
+				<div class="project-meta-grid">
+					<div>
+						<span>Problem Area</span>
+						<strong>Urban Mobility</strong>
+					</div>
+
+					<div>
+						<span>Tools</span>
+						<strong>Python · Open Data · Geospatial</strong>
+					</div>
+
+					<div>
+						<span>Output</span>
+						<strong>Interactive Dashboard</strong>
+					</div>
+				</div>
+
+				<div class="studyflow-actions">
+					<a
+						href="https://github.com/ckolavennu/TransitPulse-Klang-Valley"
+						target="_blank"
+						rel="noreferrer"
+						class="primary"
+					>
+						View GitHub Repo
+					</a>
 				</div>
 			</div>
 
-			<strong>View GitHub Repo →</strong>
-		</a>
+			<div class="transit-visual" aria-hidden="true">
+				<div class="transit-focus-card">
+					<span>Network Analysis</span>
+					<strong>Accessibility</strong>
+					<div class="transit-badge">KV</div>
+				</div>
+
+				<div class="transit-map-card">
+					<div class="transit-card-top"></div>
+					<div class="route route-one"></div>
+					<div class="route route-two"></div>
+					<div class="route route-three"></div>
+					<span class="station station-one"></span>
+					<span class="station station-two"></span>
+					<span class="station station-three"></span>
+					<span class="station station-four"></span>
+					<span class="station station-five"></span>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -144,8 +216,10 @@
 		line-height: 1.25;
 	}
 
-	.compact-project-list {
-		margin-top: 44px;
+	.flagship-stack {
+		display: grid;
+		gap: 36px;
+		margin-top: 36px;
 	}
 
 	.fyp-feature {
@@ -155,20 +229,42 @@
 			linear-gradient(135deg, rgba(56, 189, 248, 0.55), rgba(244, 114, 182, 0.36)) border-box;
 	}
 
-	.fyp-visual {
+	.foodbasket-feature {
+		background:
+			radial-gradient(circle at top right, rgba(34, 197, 94, 0.17), transparent 40%),
+			linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.78)) padding-box,
+			linear-gradient(135deg, rgba(34, 197, 94, 0.45), rgba(56, 189, 248, 0.32)) border-box;
+	}
+
+	.transit-feature {
+		background:
+			radial-gradient(circle at top right, rgba(168, 85, 247, 0.18), transparent 40%),
+			linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.78)) padding-box,
+			linear-gradient(135deg, rgba(56, 189, 248, 0.42), rgba(168, 85, 247, 0.38)) border-box;
+	}
+
+	.fyp-visual,
+	.foodbasket-visual,
+	.transit-visual {
 		position: relative;
 		min-height: 360px;
 	}
 
 	.fyp-dashboard-card,
-	.fyp-model-card {
+	.fyp-model-card,
+	.foodbasket-dashboard-card,
+	.foodbasket-focus-card,
+	.transit-map-card,
+	.transit-focus-card {
 		border: 1px solid rgba(148, 163, 184, 0.18);
 		background: rgba(2, 6, 23, 0.52);
 		box-shadow: 0 22px 70px rgba(0, 0, 0, 0.26);
 		backdrop-filter: blur(18px);
 	}
 
-	.fyp-dashboard-card {
+	.fyp-dashboard-card,
+	.foodbasket-dashboard-card,
+	.transit-map-card {
 		position: absolute;
 		right: 0;
 		bottom: 12px;
@@ -185,14 +281,28 @@
 		animation: studyflowFloat 6s ease-in-out infinite;
 	}
 
-	.fyp-card-top {
+	.fyp-card-top,
+	.foodbasket-card-top,
+	.transit-card-top {
 		width: 68%;
 		height: 18px;
 		border-radius: 999px;
+	}
+
+	.fyp-card-top {
 		background: linear-gradient(90deg, #38bdf8, #f472b6);
 	}
 
-	.fyp-bars {
+	.foodbasket-card-top {
+		background: linear-gradient(90deg, #22c55e, #38bdf8);
+	}
+
+	.transit-card-top {
+		background: linear-gradient(90deg, #38bdf8, #a78bfa);
+	}
+
+	.fyp-bars,
+	.foodbasket-bars {
 		position: absolute;
 		left: 26px;
 		right: 26px;
@@ -203,25 +313,56 @@
 		height: 150px;
 	}
 
-	.fyp-bars span {
+	.fyp-bars span,
+	.foodbasket-bars span {
 		flex: 1;
 		border-radius: 999px 999px 8px 8px;
-		background: linear-gradient(180deg, #38bdf8, rgba(56, 189, 248, 0.12));
 		animation: barPulse 3s ease-in-out infinite;
 	}
 
-	.fyp-line {
+	.fyp-bars span {
+		background: linear-gradient(180deg, #38bdf8, rgba(56, 189, 248, 0.12));
+	}
+
+	.foodbasket-bars span {
+		background: linear-gradient(180deg, #22c55e, rgba(34, 197, 94, 0.12));
+	}
+
+	.fyp-line,
+	.foodbasket-line {
 		position: absolute;
 		left: 28px;
 		right: 28px;
 		top: 112px;
 		height: 2px;
-		background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
 		transform: rotate(-7deg);
+	}
+
+	.fyp-line {
+		background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
 		box-shadow: 0 0 28px rgba(56, 189, 248, 0.42);
 	}
 
-	.fyp-model-card {
+	.foodbasket-line {
+		background: linear-gradient(90deg, #22c55e, #38bdf8, #a78bfa);
+		box-shadow: 0 0 28px rgba(34, 197, 94, 0.3);
+	}
+
+	.foodbasket-labels {
+		position: absolute;
+		left: 26px;
+		right: 26px;
+		bottom: 10px;
+		display: flex;
+		justify-content: space-between;
+		color: #94a3b8;
+		font-size: 0.68rem;
+		font-weight: 800;
+	}
+
+	.fyp-model-card,
+	.foodbasket-focus-card,
+	.transit-focus-card {
 		position: absolute;
 		z-index: 4;
 		left: 0;
@@ -232,7 +373,9 @@
 		animation: studyflowFloat 5s ease-in-out infinite;
 	}
 
-	.fyp-model-card span {
+	.fyp-model-card span,
+	.foodbasket-focus-card span,
+	.transit-focus-card span {
 		color: #94a3b8;
 		font-size: 0.78rem;
 		font-weight: 900;
@@ -240,38 +383,95 @@
 		letter-spacing: 0.08em;
 	}
 
-	.fyp-model-card strong {
+	.fyp-model-card strong,
+	.foodbasket-focus-card strong,
+	.transit-focus-card strong {
 		display: block;
 		margin: 8px 0 14px;
 		color: #f8fafc;
 		font-size: 1.2rem;
 	}
 
-	.fyp-score-ring {
+	.fyp-score-ring,
+	.foodbasket-ring,
+	.transit-badge {
 		display: grid;
 		width: 92px;
 		height: 92px;
 		place-items: center;
 		border-radius: 50%;
+		color: #f8fafc;
+		font-weight: 900;
+		font-size: 1.1rem;
+	}
+
+	.fyp-score-ring {
 		background:
 			radial-gradient(circle, rgba(15, 23, 42, 0.98) 54%, transparent 56%),
 			conic-gradient(#38bdf8 0 76%, rgba(148, 163, 184, 0.18) 76% 100%);
-		color: #f8fafc;
-		font-weight: 900;
 		font-size: 1.25rem;
 	}
 
-	.fyp-row {
+	.foodbasket-ring {
 		background:
-			radial-gradient(circle at top right, rgba(56, 189, 248, 0.14), transparent 42%),
-			rgba(15, 23, 42, 0.68);
+			radial-gradient(circle, rgba(15, 23, 42, 0.98) 54%, transparent 56%),
+			conic-gradient(#22c55e 0 38%, #38bdf8 38% 68%, #a78bfa 68% 86%, rgba(148, 163, 184, 0.18) 86% 100%);
 	}
 
-	.transitpulse-row {
+	.transit-badge {
 		background:
-			radial-gradient(circle at top right, rgba(168, 85, 247, 0.12), transparent 42%),
-			rgba(15, 23, 42, 0.68);
+			radial-gradient(circle, rgba(15, 23, 42, 0.98) 54%, transparent 56%),
+			conic-gradient(#38bdf8 0 42%, #a78bfa 42% 72%, #f472b6 72% 88%, rgba(148, 163, 184, 0.18) 88% 100%);
 	}
+
+	.route {
+		position: absolute;
+		height: 4px;
+		border-radius: 999px;
+		transform-origin: left center;
+		box-shadow: 0 0 18px rgba(56, 189, 248, 0.22);
+	}
+
+	.route-one {
+		left: 52px;
+		top: 106px;
+		width: 245px;
+		background: linear-gradient(90deg, #38bdf8, #a78bfa);
+		transform: rotate(10deg);
+	}
+
+	.route-two {
+		left: 80px;
+		top: 174px;
+		width: 225px;
+		background: linear-gradient(90deg, #22c55e, #38bdf8);
+		transform: rotate(-18deg);
+	}
+
+	.route-three {
+		left: 182px;
+		top: 90px;
+		width: 118px;
+		background: linear-gradient(90deg, #a78bfa, #f472b6);
+		transform: rotate(64deg);
+	}
+
+	.station {
+		position: absolute;
+		z-index: 2;
+		width: 16px;
+		height: 16px;
+		border: 3px solid rgba(2, 6, 23, 0.92);
+		border-radius: 50%;
+		background: #38bdf8;
+		box-shadow: 0 0 18px rgba(56, 189, 248, 0.5);
+	}
+
+	.station-one { left: 46px; top: 100px; }
+	.station-two { left: 155px; top: 116px; background: #a78bfa; }
+	.station-three { right: 62px; top: 142px; background: #f472b6; }
+	.station-four { left: 76px; bottom: 60px; background: #22c55e; }
+	.station-five { right: 92px; bottom: 92px; }
 
 	.studyflow-actions {
 		display: flex;
@@ -290,6 +490,16 @@
 		}
 	}
 
+	@keyframes barPulse {
+		0%, 100% {
+			filter: brightness(1);
+		}
+
+		50% {
+			filter: brightness(1.18);
+		}
+	}
+
 	@media (max-width: 960px) {
 		.flagship-project {
 			grid-template-columns: 1fr;
@@ -301,11 +511,15 @@
 			padding: 24px;
 		}
 
-		.fyp-model-card {
+		.fyp-model-card,
+		.foodbasket-focus-card,
+		.transit-focus-card {
 			display: none;
 		}
 
-		.fyp-dashboard-card {
+		.fyp-dashboard-card,
+		.foodbasket-dashboard-card,
+		.transit-map-card {
 			position: relative;
 			width: auto;
 		}
