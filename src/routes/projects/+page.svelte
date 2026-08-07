@@ -91,26 +91,6 @@
 	</div>
 
 	<div class="project-list enhanced-project-list compact-project-list">
-		<a href="/projects/student-dropout" class="project-row fyp-row">
-			<div>
-				<p class="status">Live Demo</p>
-				<h2>Student Dropout Risk Prediction</h2>
-				<p>
-					A final year machine learning project focused on predicting withdrawal risk in higher
-					education using academic indicators and a deployed Streamlit dashboard.
-				</p>
-
-				<div class="tags">
-					<span>Python</span>
-					<span>Machine Learning</span>
-					<span>Classification</span>
-					<span>Streamlit</span>
-				</div>
-			</div>
-
-			<strong>View Case Study →</strong>
-		</a>
-
 		<a href="/projects/foodbasket" class="project-row">
 			<div>
 				<p class="status">In Progress</p>
