@@ -8,8 +8,8 @@
 			<h1>Experience, skills, and academic background.</h1>
 
 			<p class="subtitle">
-				My resume highlights my Technical Assistant journey, internships, student leadership,
-				and growing focus in data analytics, reporting, and visualisation.
+				My resume highlights my data analytics background, digital consulting work, technical
+				operations experience, internships, and leadership across university and professional settings.
 			</p>
 
 			<div class="buttons">
@@ -28,8 +28,8 @@
 	<div class="resume-dashboard">
 		<div>
 			<span>Experience</span>
-			<strong>TA, internships & leadership</strong>
-			<p>Hands-on roles across technical support, administration, reporting, and student leadership.</p>
+			<strong>Consulting, analytics & operations</strong>
+			<p>Experience across digital solutions consulting, data reporting, technical support, and leadership.</p>
 		</div>
 
 		<div>
@@ -84,8 +84,8 @@
 
 			<div>
 				<span>2026</span>
-				<strong>Lab Chief</strong>
-				<p>Took on higher-level team coordination and lab-related leadership.</p>
+				<strong>Data Analytics Graduate · Pearl Island</strong>
+				<p>Completed my degree and moved into freelance digital solutions and technology consulting.</p>
 			</div>
 		</div>
 	</div>
@@ -94,10 +94,10 @@
 		<div class="content-card">
 			<h2>Experience Highlights</h2>
 			<ul>
+				<li>Digital Solutions & Technology Consultant at Pearl Island LLC.</li>
 				<li>Technical Assistant journey from trainee to Lab Chief.</li>
-				<li>HR, coordination, administration, and leadership experience within the TA team.</li>
-				<li>Student leadership through ISA and IEEE APU Student Branch.</li>
 				<li>Internship experience in IT support and data visualization/reporting.</li>
+				<li>Leadership experience through the TA team, ISA, and IEEE APU Student Branch.</li>
 			</ul>
 		</div>
 
