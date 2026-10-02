@@ -12,16 +12,15 @@
 					location: 'Oman · Remote',
 					type: 'Freelance',
 					summary:
-						'Supporting Pearl Island LLC and its associated businesses with digital strategy, web development, branding, and technology solutions. The role combines hands-on implementation with consulting, helping translate business requirements into practical digital systems and a stronger online presence.',
+						'Supporting Pearl Island LLC and its associated businesses with digital strategy, web development, branding, and technology solutions.',
 					responsibilities: [
-						'Design and develop modern, responsive corporate websites for Pearl Island and associated businesses.',
-						'Translate business requirements into practical website, branding, and technology solutions.',
-						'Advise on domains, corporate email, hosting, DNS, and supporting online infrastructure.',
-						'Develop branding concepts, colour systems, and visual assets to support a consistent digital presence.',
-						'Manage deployment workflows using Git, GitHub, and web hosting platforms.',
-						'Support affiliated business initiatives, including Khaleej Vision, with web, brand, and digital infrastructure work.'
+						'Designing and developing modern, responsive corporate websites aligned with company branding and business objectives.',
+						"Supporting the development and management of Pearl Island's digital presence and online infrastructure.",
+						'Developing branding concepts, colour systems, visual assets, and digital design direction for company projects.',
+						'Supporting subsidiary and affiliated business projects.',
+						'Managing deployment workflows.'
 					],
-					skills: ['Web Development', 'Digital Strategy', 'Technology Consulting', 'Branding', 'Domains & Email', 'Git & Deployment'],
+					skills: ['Web Development', 'Digital Strategy', 'Branding', 'Digital Design', 'Online Infrastructure', 'Deployment'],
 					images: []
 				}
 			]
