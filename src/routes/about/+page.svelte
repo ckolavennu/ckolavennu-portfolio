@@ -1,6 +1,32 @@
 <script>
 	const tracks = [
 		{
+			id: 'professional',
+			label: 'Professional Experience',
+			count: '1 role',
+			items: [
+				{
+					title: 'Digital Solutions & Technology Consultant',
+					period: 'Aug 2026 – Present',
+					organization: 'Pearl Island LLC',
+					location: 'Oman · Remote',
+					type: 'Freelance',
+					summary:
+						'Supporting Pearl Island LLC and its associated businesses with digital strategy, web development, branding, and technology solutions. The role combines hands-on implementation with consulting, helping translate business requirements into practical digital systems and a stronger online presence.',
+					responsibilities: [
+						'Design and develop modern, responsive corporate websites for Pearl Island and associated businesses.',
+						'Translate business requirements into practical website, branding, and technology solutions.',
+						'Advise on domains, corporate email, hosting, DNS, and supporting online infrastructure.',
+						'Develop branding concepts, colour systems, and visual assets to support a consistent digital presence.',
+						'Manage deployment workflows using Git, GitHub, and web hosting platforms.',
+						'Support affiliated business initiatives, including Khaleej Vision, with web, brand, and digital infrastructure work.'
+					],
+					skills: ['Web Development', 'Digital Strategy', 'Technology Consulting', 'Branding', 'Domains & Email', 'Git & Deployment'],
+					images: []
+				}
+			]
+		},
+		{
 			id: 'ta',
 			label: 'TA Journey',
 			count: '6 roles',
@@ -195,8 +221,8 @@
 		}
 	];
 
-	let activeTrackId = $state('ta');
-	let activeItemIndex = $state(1);
+	let activeTrackId = $state('professional');
+	let activeItemIndex = $state(0);
 
 	let activeTrack = $derived(tracks.find((track) => track.id === activeTrackId));
 	let activeItem = $derived(activeTrack.items[activeItemIndex]);
@@ -227,12 +253,12 @@
 		<div>
 			<p class="eyebrow">About Me</p>
 
-			<h1>My journey through technical support, leadership, and data work.</h1>
+			<h1>My journey through technology, leadership, operations, and data.</h1>
 
 			<p class="subtitle">
-				I’m Chandu Kolavennu, a Computer Science student specialising in Data Analytics. My
-				university journey has involved technical assistant work, student leadership, HR
-				coordination, internships, reporting, and community roles.
+				I’m Chandu Kolavennu, a Data Analytics graduate building towards analyst roles while
+				working across digital consulting, web development, technical operations, leadership,
+				reporting, and practical problem-solving.
 			</p>
 		</div>
 
@@ -241,9 +267,9 @@
 			<strong>Data Analyst roles</strong>
 
 			<div class="identity-tags">
-				<p>Technical Assistant</p>
-				<p>Student Leader</p>
+				<p>Digital Solutions Consultant</p>
 				<p>Data Analytics</p>
+				<p>Technical Operations</p>
 			</div>
 		</div>
 	</div>
@@ -308,6 +334,9 @@
 						<div class="role-meta">
 							<span>{activeItem.organization}</span>
 							<span>{activeItem.period}</span>
+							{#if activeItem.location}
+								<span>{activeItem.location}</span>
+							{/if}
 						</div>
 
 						<p>{activeItem.summary}</p>
